@@ -1,6 +1,6 @@
 # SDLC
 
-Software development life cycle skills for AI agents, after ISO/IEC/IEEE 12207.
+Software development life cycle skills for AI agents.
 
 SDLC is a catalog of skills that carries an AI agent - Claude Code, Codex, Cursor and
 others - through software development the way the industry standards describe it. The
