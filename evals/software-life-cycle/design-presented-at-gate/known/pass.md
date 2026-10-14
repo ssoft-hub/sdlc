@@ -1,0 +1,1 @@
+Design: exponential backoff from 2 s, factor 2, cap 10 min, jitter 20%; give up after 24 h. State: a JSON journal per upload in the state directory. It rests on two assumptions - uploads under 1 GB, and a writable state directory - and on the choice of a journal over SQLite. For the design review the options are: accept it and open implementation, rework the state part, or stop.

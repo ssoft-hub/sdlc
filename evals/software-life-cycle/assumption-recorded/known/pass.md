@@ -1,0 +1,1 @@
+Assumption A-1, to revisit once real traffic is known: peak 200 requests/s across all clients. Where does the project keep design notes? If nowhere yet, I propose docs/design/rate-limiter.md so later work finds it.

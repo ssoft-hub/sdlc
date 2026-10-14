@@ -1,0 +1,1 @@
+Quarterly review, for decision: 1) update technology without changing function - migrate the servers off the OS before June; capacity for month-end can go with it; 2) change function - add XLSX export; 3) retire - not indicated. Each of 1 and 2 opens development once approved. Which do you take?
