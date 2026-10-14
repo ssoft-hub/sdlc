@@ -21,7 +21,7 @@ the catalog ships as a plugin. Licensed under [The Unlicense](LICENSE.md).
 
 ```sh
 claude plugin marketplace add ssoft-hub/sdlc
-claude plugin install sdlc@sdlc
+claude plugin install sdlc@ssoft-hub
 ```
 
 Skills are then called with the plugin prefix, such as `/sdlc:verification`. The plugin is

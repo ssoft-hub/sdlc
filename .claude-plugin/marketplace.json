@@ -1,0 +1,15 @@
+{
+  "name": "ssoft-hub",
+  "owner": {
+    "name": "ssoft-hub"
+  },
+  "metadata": {
+    "description": "Claude Code plugins published by ssoft-hub"
+  },
+  "plugins": [
+    {
+      "name": "sdlc",
+      "source": "./"
+    }
+  ]
+}
