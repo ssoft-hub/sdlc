@@ -1,6 +1,6 @@
 # SDLC
 
-Software development life cycle skills for AI agents, after ISO/IEC/IEEE 12207.
+Software development life cycle skills for AI agents.
 
 SDLC is a catalog of skills that carries an AI agent - Claude Code, Codex, Cursor and
 others - through software development the way the industry standards describe it. The
@@ -21,7 +21,7 @@ the catalog ships as a plugin. Licensed under [The Unlicense](LICENSE.md).
 
 ```sh
 claude plugin marketplace add ssoft-hub/sdlc
-claude plugin install sdlc@sdlc
+claude plugin install sdlc@ssoft-hub
 ```
 
 Skills are then called with the plugin prefix, such as `/sdlc:verification`. The plugin is
