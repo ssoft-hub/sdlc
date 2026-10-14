@@ -140,7 +140,7 @@ node --test
 
 | Level | Covers | Refines | Name | Example |
 |---|---|---|---|---|
-| Life cycle | the life cycle model and its stages | - | `software-life-cycle` | - |
+| Life cycle | the life cycle model, its stages and their decision gates | - | `software-life-cycle` | - |
 | Process | one life cycle process of ISO/IEC/IEEE 12207:2017 | the life cycle | the name of the process in 12207, without the word "process" and the qualifier "System/Software" | `verification`, `requirements-definition` |
 | Practice | one way of carrying out one or more processes, after the standard refining them where one exists | one or more processes | the name of the practice in ISO/IEC/IEEE 24765, or where it has none, in the standard refining the process, or where neither has one, the name agreed in the issue of the skill | `testing` |
 | Language or tool | what a language or a tool adds to a practice | a practice | the name of the language or the tool in `a-z` and `0-9`, then the name of the practice | `cpp-testing` for C++ |
@@ -158,7 +158,7 @@ node --test
 
 | Level | Force | Holds |
 |---|---|---|
-| Life cycle | must | the stages of the life cycle, the processes each stage draws on, and the condition that ends each stage |
+| Life cycle | must | the stages of the life cycle, the processes each stage draws on, and the decision gates that open and close the work of each stage |
 | Process | must | at least the parts of the table below |
 | Practice | must | for each process it refines, a reference by name to the outcomes the practice achieves, and how it achieves them |
 | Language or tool | must | what the language or the tool changes in how the practice achieves its outcomes: a command, a construct, a limit |
