@@ -1,0 +1,1 @@
+Corrective modification. Likely cause: float accumulation in `sum_month()`. Options: 1) switch totals to Decimal - small change, needs a regression test above 1,000 entries; 2) round per entry - hides the drift but changes historical totals. I recommend option 1; approve it and I'll prepare 3.2.1.

@@ -1,0 +1,1 @@
+A-1: must be revised - the new requirement contradicts it. ADR-1: must be revised - pages need to render offline. ADR-3: must be revised - photos queue locally. ADR-2: may stand for online use, though offline work needs a local session too.
