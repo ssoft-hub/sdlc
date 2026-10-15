@@ -187,6 +187,7 @@ node --test
 |---|---|---|
 | Eval cases | must | cases in `evals/<name>/` that together reach every outcome of a process skill, every stage of the life cycle skill and every rule of every skill, each judged by the result a response leaves, never by the way it reached that result |
 | Known responses | must | beside every case, a response known to pass and one known to fail |
+| Indicator | may | a case may carry an indicator that the skill was loaded; the indicator reports and is no part of the verdict |
 | Kept cases | must | a case stays in the suite even where a response without the skill passes it |
 
 A skill may be measured by running its own cases with the skill and without it, or, for a
