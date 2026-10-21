@@ -1,0 +1,1 @@
+Your GOVERNANCE file puts this change behind the architecture board. I suggest this order: 1) I draft ADR 'Idempotency key on charge()' with the motivation and the breaking-change note; 2) you take it to the board; 3) once it is approved I make the change and the migration note. Shall we go this way?

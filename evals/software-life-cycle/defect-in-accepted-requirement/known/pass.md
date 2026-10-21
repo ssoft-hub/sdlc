@@ -1,0 +1,1 @@
+REQ-4 and REQ-9 conflict: 'Ann' and 'ann' would be two users, but REQ-9 logs both in as one. I propose amending REQ-4 to 'usernames are unique case-insensitively'. This needs the product owner's decision before I implement the check.
