@@ -142,7 +142,7 @@ node --test
 |---|---|---|---|---|
 | Life cycle | the life cycle model, its stages and their decision gates | - | `software-life-cycle` | - |
 | Process | one life cycle process of ISO/IEC/IEEE 12207:2017 | the life cycle | the name of the process in 12207, without the word "process" and the qualifier "System/Software" | `verification`, `requirements-definition` |
-| Practice | one way of carrying out one or more processes, after the standard refining them where one exists | one or more processes | the name of the practice in ISO/IEC/IEEE 24765, or where it has none, in the standard refining the process, or where neither has one, the name agreed in the issue of the skill | `testing` |
+| Practice | one way of carrying out one process, after the standard refining it where one exists | one process | the name of the practice in ISO/IEC/IEEE 24765, or where it has none, in the standard refining the process, or where neither has one, the name agreed in the issue of the skill | `testing` |
 | Language or tool | what a language or a tool adds to a practice | a practice | the name of the language or the tool in `a-z` and `0-9`, then the name of the practice | `cpp-testing` for C++ |
 
 | Subject | Force | Rule |
@@ -153,6 +153,17 @@ node --test
 | Files | may | the directory of a skill holds, beside `SKILL.md`, the files the skill uses: documentation such as a vocabulary in `references/`, scripts in `scripts/`, templates and data in `assets/` |
 | File references | must | `SKILL.md` refers to each file of its directory by its path inside the directory, one level deep |
 | Size | should | `SKILL.md` stays under 500 lines |
+| Parent | must | `SKILL.md` of a skill of the Life cycle level, a root, carries no metadata key `sdlc-refines`; `SKILL.md` of a skill of any other level carries `sdlc-refines` holding the name of the one skill it refines |
+| Chain | must | following `sdlc-refines` from any skill reaches a root |
+
+```
+---
+name: testing
+description: ...
+metadata:
+  sdlc-refines: verification
+---
+```
 
 ### What a skill holds
 
@@ -160,7 +171,7 @@ node --test
 |---|---|---|
 | Life cycle | must | the stages of the life cycle, the processes each stage draws on, and the decision gates that open and close the work of each stage |
 | Process | must | at least the parts of the table below |
-| Practice | must | for each process it refines, a reference by name to the outcomes the practice achieves, and how it achieves them |
+| Practice | must | a reference by name to the outcomes of the process it refines that the practice achieves, and how it achieves them |
 | Language or tool | must | what the language or the tool changes in how the practice achieves its outcomes: a command, a construct, a limit |
 
 | Part of a process skill | Holds | After |
@@ -175,7 +186,8 @@ node --test
 |---|---|---|
 | Any project | must | the text holds in any project of a user, since an agent reads it there: it names no file, branch or path of this repository outside the skill's own directory, and cites no clause of a standard |
 | Force | must | every rule states its force with its own verb: must, must not, should, should not or may; a section of a skill carries no force marker |
-| A narrower skill | must | it names the skill it refines, takes that skill's purpose, outcomes, activities, tasks, inputs, outputs and names as given, contradicts none of them and refers to them by name rather than restating them |
+| A narrower skill | must | it refers to the skill it refines by its name in backticks, takes that skill's purpose, outcomes, activities, tasks, inputs, outputs and names as given, contradicts none of them and refers to them by name rather than restating them |
+| References | must | a skill refers in backticks to no skill of the catalog outside its chain of `sdlc-refines`, so a root refers in backticks to no other skill |
 | Standards | must | a skill contradicts none of the standards this file names, nor the standard refining its process |
 | Beyond the standards | may | a skill holds what no standard states, such as a convention, a practice of the field or the command of a tool |
 | One concern | should | a concern an existing skill covers becomes a rule of that skill, not a new skill |
@@ -191,9 +203,10 @@ node --test
 | Kept cases | must | a case stays in the suite even where a response without the skill passes it |
 
 A skill may be measured by running its own cases with the skill and without it, or, for a
-change, before the change and after it. Each run loads the skills the measured skill depends on,
-directly or through another, and no other skill, so that no other narrower skill shows in the
-score. A measurement depends on the model and ages, so a request need not carry one.
+change, before the change and after it. Each run loads the ancestors of the measured skill
+along `sdlc-refines` up to its root and, in every run but the one without the skill, the skill
+itself; it loads no other skill, so that no other narrower skill shows in the score. A
+measurement depends on the model and ages, so a request need not carry one.
 
 An author may start from a table of the situations the skill covers, agreed in the issue of
 the skill, and build the text and the cases from its rows.
