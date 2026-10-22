@@ -188,10 +188,11 @@ metadata:
 | Any project | shall | the text holds in any project of a user, since an agent reads it there: it names no file, branch or path of this repository outside the skill's own directory, and cites no clause of a standard |
 | Force | shall | every rule states its force with a verbal form of ISO/IEC Directives, Part 2: shall or shall not for a requirement, should or should not for a recommendation, may or need not for a permission; can or cannot state a possibility and must an external constraint, and neither states the force of a rule; a section of a skill carries no force marker |
 | Force of a source | shall | a rule resting on a clause of a standard takes the force of that clause's verbal form; the purpose, an outcome, an activity, a task or a base practice of a process gives shall, a statement with no verbal form in a normative clause gives should, and an informative clause - a note, a technical report, a recommended practice - gives should; a different force, or a rule resting on no clause, is given with its reason in the table of situations |
+| Practice content | shall | content of a standard refining a process that changes no task of it - that adds, removes or replaces no task and changes no outcome, input or output of one, such as how a task is performed - is left to a practice skill refining that process |
 | A narrower skill | shall | it refers to the skill it refines by its name in backticks, takes that skill's purpose, outcomes, activities, tasks, inputs, outputs and names as given, contradicts none of them and refers to them by name rather than restating them |
 | References | shall | a skill refers in backticks to no skill of the catalog outside its chain of `sdlc-refines`, so a root refers in backticks to no other skill |
 | Standards | shall | a skill contradicts none of the standards this file names, nor the standard refining its process |
-| Beyond the standards | may | a skill holds what no standard states, such as a convention, a practice of the field or the command of a tool |
+| Beyond the standards | may | a skill holds what no standard states, such as a convention, a practice of the field or the command of a tool; a process skill holds nothing the rule Practice content leaves to a practice skill |
 | One concern | should | a concern an existing skill covers becomes a rule of that skill, not a new skill |
 | Hooks | shall | a skill names no hook, and no rule of a skill relies on a hook being present |
 
