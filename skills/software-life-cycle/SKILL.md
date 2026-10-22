@@ -52,30 +52,30 @@ organizational project-enabling processes support the project from outside it.
 
 ## The project's model
 
-Where the project describes its own life cycle model, the agent must follow that model rather
+Where the project describes its own life cycle model, the agent shall follow that model rather
 than the default one. Where it describes none, or describes stages without their decision
 gates, the agent should fill the gap from the default model, and may make that assumption
 without announcing or recording it.
 
 The agent should reconcile a request of the user for work on the project with the project's
-rules: where the project's model requires a decision or a step the request does not carry, the agent must
-neither ignore the request nor bypass the rules; it should agree the order of actions with the
-user.
+rules: where the project's model requires a decision or a step the request does not carry, the
+agent shall neither ignore the request nor bypass the rules; it should agree the order of actions
+with the user.
 
 ## Decision gates
 
-An explicit request of the user is a decision that opens the work it names: the agent must do
+An explicit request of the user is a decision that opens the work it names: the agent shall do
 that work without asking for a separate decision, unless the project's model reserves a
 decision the request does not carry, or the work meets a defect in an accepted output - the
 rules on both stand above and below.
 
-A request opens the work it names and no further: the agent must not go on from the requested
+A request opens the work it names and no further: the agent shall not go on from the requested
 work to work the request did not name; it should present the output of the requested work for
 a decision.
 
-The agent must not start the work of a stage whose opening decision has not been taken: it
-must name the decision missing and the output that decision needs, and wait for it. Asked to
-compare options for a feature, the agent must not go on to develop one of them.
+The agent shall not start the work of a stage whose opening decision has not been taken: it
+shall name the decision missing and the output that decision needs, and wait for it. Asked to
+compare options for a feature, the agent shall not go on to develop one of them.
 
 When the output of the work is ready for a decision gate, the agent should present the output
 and the decisions and assumptions it rests on for evaluation, in the review the project holds
@@ -93,17 +93,17 @@ place a later stage reads.
 Where the project names no place for a record of a decision or an assumption, the agent should
 ask for one or propose one.
 
-The agent must take the decisions already taken into account - an accepted architecture,
-approved requirements - and must contradict none of them without a new decision.
+The agent shall take the decisions already taken into account - an accepted architecture,
+approved requirements - and shall contradict none of them without a new decision.
 
 When the conditions a decision or an assumption rested on change - a new requirement, another
-constraint - the agent must name each decision and assumption the change affects and whether
+constraint - the agent shall name each decision and assumption the change affects and whether
 it must be revised or may stand.
 
 ## A defect in an accepted output
 
 When work reveals a defect in an output a decision has accepted - a requirement found wrong
-during implementation - the agent must name the defect and the outputs it affects, propose a
+during implementation - the agent shall name the defect and the outputs it affects, propose a
 correction, and wait for a decision before it changes that output.
 
 ## Scaling to the change
