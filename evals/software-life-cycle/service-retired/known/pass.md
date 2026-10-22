@@ -1,0 +1,1 @@
+Plan: disable sending, redirect callers to the new service, then remove the service. Before removal one decision is needed on the delivery logs: archive them, move them to the data warehouse, or destroy them. I propose archiving for the retention period; please confirm.
