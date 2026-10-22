@@ -1,0 +1,1 @@
+Apache-2.0 asks, for each binary of orbit you distribute with fastjson: include a copy of the Apache-2.0 licence, and reproduce the attributions in fastjson's NOTICE file. Meet both by adding a THIRD-PARTY-NOTICES file to the installer and the About box, and keep it while orbit ships with fastjson.

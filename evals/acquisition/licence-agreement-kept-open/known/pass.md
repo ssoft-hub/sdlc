@@ -1,0 +1,1 @@
+The integration work is done, but the licence stays in force while orbit ships fastjson: each release still carries the Apache-2.0 licence copy and the NOTICE attributions. It closes when orbit stops shipping fastjson.

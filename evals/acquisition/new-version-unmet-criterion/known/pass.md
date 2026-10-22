@@ -1,0 +1,1 @@
+I haven't bumped it: yamlkit 2.0 drops Python 3.10, which was one of the acceptance criteria and which atlas still runs on in production. Your decision: stay on 1.9 until production moves to 3.11, or move production first and then bump.

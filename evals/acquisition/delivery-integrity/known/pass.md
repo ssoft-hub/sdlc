@@ -1,0 +1,1 @@
+I haven't put it in the release: an emailed zip with no checksum or signature can't be confirmed as Northwind's build. Please ask Northwind for the repository tag of 1.1 or a SHA-256 of the zip; once it matches, it goes into the release.

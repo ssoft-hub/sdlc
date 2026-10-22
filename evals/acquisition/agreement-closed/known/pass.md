@@ -1,0 +1,1 @@
+Not closed yet: the agreement requires the source code handover, and it is not done. Once Northwind hands over the source, the agreement can be closed. Draft to Northwind: 'Please complete the source code handover required by the agreement, so we can close it.'
