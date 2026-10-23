@@ -1,0 +1,1 @@
+Draft reply: 'Barcode scanning is outside our agreement, so it needs a change to it. Our estimate: 8 days and 4,800 EUR; delivery moves to 15 April 2027; quality - scanning needs its own acceptance test; obligations - Harbor provides sample parcel labels by 1 February 2027; plans - the pilot moves a week. We'll send an amendment; once both sides sign it, scanning is in.'

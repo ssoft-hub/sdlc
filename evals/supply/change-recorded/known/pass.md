@@ -1,0 +1,4 @@
+- Requirements: add barcode scanning with its acceptance test.
+- Schedule: delivery 15 April 2027; milestones shifted.
+- Test plan: scanning cases added.
+- Team: told of the new scope and date in today's stand-up note.

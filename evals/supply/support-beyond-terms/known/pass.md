@@ -1,0 +1,1 @@
+Support ended on 31 December 2026, so this fix falls outside the agreement. Draft to Harbor: 'We can fix the Android 16 crash for 1,200 EUR, or extend support by six months for 4,000 EUR.' Which do you want to offer?

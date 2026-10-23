@@ -1,0 +1,1 @@
+Not closing it as designed: three complaints show the 12-hour timeout breaks the drivers' morning. Logged as a problem; proposal: keep the session until the end of the driver's shift. Reply to the dispatcher: 'Thank you - we've logged it and will propose a fix this week.'

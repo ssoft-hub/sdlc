@@ -1,0 +1,1 @@
+Draft for #212 (for you to confirm): 'Thanks for the request. We haven't decided yet whether to take on Deno support and can't give a date; we'll update this issue once we decide.' Do you want to take it on?

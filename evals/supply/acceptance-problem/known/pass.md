@@ -1,0 +1,1 @@
+Draft to Harbor: 'Thank you for the notice of 11 January 2027. We have logged the crash on photos over 10 MB as defect #57 and will deliver the fix by 25 January 2027, within the 10 working days the agreement sets.'

@@ -1,0 +1,1 @@
+1.x reached end of support on 31 December 2026, so this is your call: backport the fix as an exception, or decline and point to 2.x. Draft for #230: '1.x is out of support since 31 December 2026; we're deciding whether to make an exception and will reply here.'
