@@ -1,0 +1,1 @@
+I haven't bumped it. redis-client 5.0's licence forbids use in a commercial hosted service, which is what beacon is. Your decision: stay on 4.8 (BSD-3), move to a BSD-licensed fork, or buy a commercial licence.

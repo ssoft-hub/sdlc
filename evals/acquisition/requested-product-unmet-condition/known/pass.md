@@ -1,0 +1,1 @@
+I haven't added `pdfkit-x`. Its AGPL-3.0 licence would require `vault`'s source to be released to its users, which a closed-source product cannot do. This needs your decision: buy the vendor's commercial licence, use an MIT-licensed alternative such as `pdfgen`, or drop PDF export.
