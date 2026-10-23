@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - [acquisition] Added `acquisition`: obtaining a product or service from a supplier
+- [supply] Added `supply`: providing a product or service to an acquirer
 
 ## [0.1.0] - 2026-10-22
 

@@ -1,0 +1,1 @@
+Yes: the agreement covers Android 14 to 16, and Harbor's new phones will likely run Android 17. Propose an amendment adding Android 17 support - our estimate is 5 days, 3,000 EUR - before Harbor buys the phones in spring 2027.

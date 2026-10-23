@@ -1,0 +1,2 @@
+- Record: incident logged - laptop with Harbor's customer database copy stolen 10 January 2027, disk unencrypted.
+- Draft to Harbor, today: 'On 10 January 2027 a laptop holding the copy of your customer database you gave us for testing was stolen; its disk was not encrypted. We have reported the theft and will support your assessment of the breach.'

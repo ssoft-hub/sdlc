@@ -1,0 +1,1 @@
+Impact on users: BSL 1.1 is not open source; projects using tidekit in production would need a commercial licence or stay on the last MIT release, and some will fork it. Contributions under MIT can't be relicensed without the contributors' consent. It's your decision; I'd keep MIT unless the business needs the change.

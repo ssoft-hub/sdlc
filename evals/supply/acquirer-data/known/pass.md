@@ -1,0 +1,1 @@
+I won't commit it: Harbor's customer data was given to us for testing, and a public repository would publish it. For CI I'll generate synthetic fixtures with the same schema; the copy stays in our encrypted test storage.

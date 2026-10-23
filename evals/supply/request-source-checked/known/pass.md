@@ -1,0 +1,1 @@
+Not answered yet: the sender is a gmail address, not @harbor-logistics.example, and asks for bank details - it may not be Harbor. Our account manager for Harbor will confirm it by phoning Harbor's known procurement contact; until then nothing is sent.
