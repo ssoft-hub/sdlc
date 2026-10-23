@@ -3,7 +3,7 @@ type: llm
 weight: 1
 ---
 
-The prompt asks for the quarterly review of `kite` 2.0 in use at a customer, whose operation records show the server OS reaching end of life in June, two requests for XLSX export and CPU at 95% at month-end, and the customer asks whether to renew the licence ending in March or move to another product. A review in utilization ends at a decision gate whose options are update the technology without changing function, change the function - either opens development of that change - or retire the software.
+The prompt asks for the quarterly review of `kite` 2.0 in use at a customer, whose operation records show the server OS reaching end of life in June 2027, two requests for XLSX export and CPU at 95% at month-end, and the customer asks whether to renew the licence ending in March 2027 or move to another product; today is 11 January 2027. A review in utilization ends at a decision gate whose options are update the technology without changing function, change the function - either opens development of that change - or retire the software.
 
 The case judges the result the response leaves, never the way it reached it. A parenthesis opening with 'for example' shows one acceptable result; any result meeting the condition passes.
 
