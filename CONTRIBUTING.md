@@ -30,9 +30,7 @@ already.
 | `Goal`, `Problem` | shall | the symptom or the missing capability, its cost and what triggers it; no history of the discovery, no alternative weighed |
 | `Steps to reproduce` | shall | one action per step |
 | Acceptance criterion | shall | one condition, `Given ..., when ..., then ...`, ticked by one observation of what the work delivers by the time the issue closes |
-| Criteria of a `Fix` | shall | one criterion for an eval case or a test reproducing the defect that fails before the change, and one for it passing against the change |
 | Plan of checks | shall | none in the body |
-| Table of situations | shall | in the issue of a skill, agreed before the text is written: each row gives the result a rule asks for, the clause of a standard it rests on or the reason it rests on none, its force, and the reason for a force other than its clause gives; the text and the cases of the skill are built from its rows |
 
 ```
 Feat(verification): Add the verification process skill
@@ -89,9 +87,6 @@ others. Each part of the repository is read by every such agent or by one alone:
 | Pull request | shall | targets `dev`; titled `SDLC-<n>: Subject`, where `<n>` is the number of the issue, or in the form of a commit subject where the request has no issue; the description carries the sections `Problem`, `Summary`, `Implementation` and `Test plan` |
 | Merge | shall | the request is merged into `dev` once its checks have passed, its review is given and every acceptance criterion of its issue is checked |
 | Close | shall | the issue is closed once its request merges into `dev`: GitHub closes an issue by itself only on a merge into the default branch, `main` |
-
-A pull request adding a skill or changing a rule of a skill shall carry what the subsection
-What a pull request with a skill carries lists.
 
 ### From a clone to a pull request
 
@@ -187,7 +182,7 @@ metadata:
 |---|---|---|
 | Any project | shall | the text holds in any project of a user, since an agent reads it there: it names no file, branch or path of this repository outside the skill's own directory, and cites no clause of a standard |
 | Force | shall | every rule states its force with a verbal form of ISO/IEC Directives, Part 2: shall or shall not for a requirement, should or should not for a recommendation, may or need not for a permission; can or cannot state a possibility and must an external constraint, and neither states the force of a rule; a section of a skill carries no force marker |
-| Force of a source | shall | a rule resting on a clause of a standard takes the force of that clause's verbal form; the purpose, an outcome, an activity, a task or a base practice of a process gives shall, a statement with no verbal form in a normative clause gives should, and an informative clause - a note, a technical report, a recommended practice - gives should; a different force, or a rule resting on no clause, is given with its reason in the table of situations |
+| Force of a source | shall | a rule resting on a clause of a standard takes the force of that clause's verbal form; the purpose, an outcome, an activity, a task or a base practice of a process gives shall, and a verbal form in an informative clause - a note, a technical report, a recommended practice - gives at most should; a statement with no verbal form gives no force, so a rule resting only on it rests on no clause |
 | Practice content | shall | content of a standard refining a process that changes no task of it - that adds, removes or replaces no task and changes no outcome, input or output of one, such as how a task is performed - is left to a practice skill refining that process |
 | A narrower skill | shall | it refers to the skill it refines by its name in backticks, takes that skill's purpose, outcomes, activities, tasks, inputs, outputs and names as given, contradicts none of them and refers to them by name rather than restating them |
 | References | shall | a skill refers in backticks to no skill of the catalog outside its chain of `sdlc-refines`, so a root refers in backticks to no other skill |
@@ -196,11 +191,15 @@ metadata:
 | One concern | should | a concern an existing skill covers becomes a rule of that skill, not a new skill |
 | Hooks | shall | a skill names no hook, and no rule of a skill relies on a hook being present |
 
-### What a pull request with a skill carries
+### Eval cases
+
+Where a skill has eval cases, they meet the rules below; whether a task gives a skill cases,
+and which rules they reach, its issue sets.
 
 | Subject | Force | Rule |
 |---|---|---|
-| Eval cases | shall | cases in `evals/<name>/` that together reach every outcome of a process skill, every stage of the life cycle skill and every rule of every skill, each judged by the result a response leaves, never by the way it reached that result |
+| Place | shall | the cases of a skill stand in `evals/<name>/` |
+| Verdict | shall | a case is judged by the result a response leaves, never by the way it reached that result |
 | Known responses | shall | beside every case, a response known to pass and one known to fail |
 | Indicator | may | a case may carry an indicator that the skill was loaded; the indicator reports and is no part of the verdict |
 | Kept cases | shall | a case stays in the suite even where a response without the skill passes it |
@@ -208,8 +207,7 @@ metadata:
 A skill may be measured by running its own cases with the skill and without it, or, for a
 change, before the change and after it. Each run shall load the ancestors of the measured skill
 along `sdlc-refines` up to its root and, in every run but the one without the skill, the skill
-itself, and no other skill, so that no other narrower skill shows in the score. A
-measurement depends on the model and ages, so a request need not carry one.
+itself, and no other skill, so that no other narrower skill shows in the score.
 
 ## Hooks
 

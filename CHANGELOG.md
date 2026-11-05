@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - [acquisition] Added `acquisition`: obtaining a product or service from a supplier
 
+### Changed
+
+- [software-life-cycle] Asked before work where no life cycle model is set, proposing the default
+
 ## [0.1.0] - 2026-10-22
 
 ### Added
