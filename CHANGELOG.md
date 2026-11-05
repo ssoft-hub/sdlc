@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - [acquisition] Added `acquisition`: obtaining a product or service from a supplier
+- [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
 

@@ -151,6 +151,7 @@ node --test
 | Size | should | `SKILL.md` stays under 500 lines |
 | Parent | shall | `SKILL.md` of a skill of the Life cycle level, a root, carries no metadata key `sdlc-refines`; `SKILL.md` of a skill of any other level carries `sdlc-refines` holding the name of the one skill it refines |
 | Chain | shall | following `sdlc-refines` from any skill reaches a root |
+| Level key | shall | `SKILL.md` carries the metadata key `sdlc-level` naming the level its chain of `sdlc-refines` places it at: `life-cycle` for a root, then `process`, `practice`, `language-or-tool` |
 
 ```
 ---
@@ -158,6 +159,7 @@ name: testing
 description: ...
 metadata:
   sdlc-refines: verification
+  sdlc-level: practice
 ---
 ```
 

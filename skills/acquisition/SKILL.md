@@ -3,6 +3,7 @@ name: acquisition
 description: Obtains a product or a service from a supplier in accordance with the acquirer's requirements - an off-the-shelf library or tool, free or paid, a hosted service, work done under contract - by preparing the request, selecting the supplier, establishing and monitoring the agreement and accepting what is delivered. Use when a library, a tool or a service is to be added to the project or chosen among candidates, when an agreement with a supplier is drafted or changed, and when a delivery arrives for acceptance.
 metadata:
   sdlc-refines: software-life-cycle
+  sdlc-level: process
 ---
 
 # Acquisition

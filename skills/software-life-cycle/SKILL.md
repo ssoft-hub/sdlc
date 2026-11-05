@@ -1,6 +1,8 @@
 ---
 name: software-life-cycle
 description: Follows the software life cycle - its stages, the processes they draw on and their decision gates - and holds work at decision gates. Use when software work is requested, when the output of a stage is ready for a decision, and when a finding or a changed condition puts an earlier decision or output in question.
+metadata:
+  sdlc-level: life-cycle
 ---
 
 # Software life cycle
