@@ -1,0 +1,12 @@
+# The transition process
+
+| Name | Statement | Observable as |
+|---|---|---|
+| purpose | the capability of the system to operate in its operational environment as the stakeholder requirements specify is established: a verified system with its enabling systems is moved into operational status in an orderly, planned manner, as the agreements define, at each level and stage; the software product meeting its requirements is installed in its target environment and the acquirer is assisted in gaining confidence that it meets them; an upgrade of a running system proceeds with minimal disruption of its operation | - |
+| constraints identified | the transition constraints that influence the system requirements, the architecture or the design are identified | the constraints recorded and passed to the system/software requirements definition, architecture definition and design definition processes |
+| enabling systems available | the enabling systems or services transition needs are available | access obtained to each enabling system planned |
+| site prepared | the site is prepared | the site meeting the criteria for the environment, its changes recorded |
+| installed and capable | the system, installed in its operational location, is capable of performing its functions; the installation strategy and the installation criteria are developed, the software product is installed in its target environment, packaged and delivered, and the acceptance reviews and tests the acquirer conducts are supported | the strategy and the criteria recorded, the delivery record, the installation record, the demonstrations of the installation and of the capability recorded, the review record of the acceptance |
+| people trained | the operators, the users and the other parties needed to use and support the system are trained | the training given recorded against the training defined |
+| ready for operation | the installed system is activated and ready for operation; the software product is ready for use in its environment and used as intended in the customer's environment, and the problems found in acceptance are identified and passed to those responsible for resolving them | the conclusion of the readiness review, the acceptance record, the problem records |
+| traceability established | traceability of the transitioned elements is established | which version of which element is installed in which environment, and when, recorded |
