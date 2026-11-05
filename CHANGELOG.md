@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- [software-life-cycle] Asked before work where no life cycle model is set, proposing the default
+- [software-life-cycle] Proposed the default life cycle model before work in a project with none
 
 ## [0.1.0] - 2026-10-22
 

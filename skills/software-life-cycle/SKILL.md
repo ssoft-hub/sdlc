@@ -22,7 +22,7 @@ affects.
 
 ## Stages
 
-The default model:
+The default life cycle model:
 
 | Stage | Purpose | Processes it draws on | Outputs |
 |---|---|---|---|
@@ -50,26 +50,26 @@ information management, measurement and quality assurance. Where software or a s
 acquired or supplied, the agreement processes, acquisition and supply, apply; the
 organizational project-enabling processes support the project from outside it.
 
-## The project's model
+## The project's life cycle model
 
-Where the project describes its own life cycle model, the agent shall follow that model rather
+Where the project describes its own life cycle model, the agent shall follow that life cycle model rather
 than the default one. Where it describes none, or describes stages without their decision
-gates, the agent shall, before the work it is asked for, propose the default model, or its
+gates, the agent shall, before the work it is asked for, propose the default life cycle model, or its
 decision gates, as the one it would follow - with the decisions it reserves, such as putting a
 release into use, and the places where the outputs and records of the work are kept - and ask
-the user. The model the user accepts is the project's model from then on, and the agent shall
+the user. The life cycle model the user accepts is the project's life cycle model from then on, and the agent shall
 record that choice as a decision. A small change, as Scaling to the change states, waits for no
 such question.
 
 The agent should reconcile a request of the user for work on the project with the project's
-rules: where the project's model requires a decision or a step the request does not carry, the
+rules: where the project's life cycle model requires a decision or a step the request does not carry, the
 agent shall neither ignore the request nor bypass the rules; it should agree the order of actions
 with the user.
 
 ## Decision gates
 
 An explicit request of the user is a decision that opens the work it names: the agent shall do
-that work without asking for a separate decision, unless the project's model reserves a
+that work without asking for a separate decision, unless the project's life cycle model reserves a
 decision the request does not carry, or the work meets a defect in an accepted output - the
 rules on both stand above and below.
 
