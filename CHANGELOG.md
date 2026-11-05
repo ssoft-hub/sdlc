@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [human-resource-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.4
 - [quality-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.5
 - [knowledge-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.6
+- [project-planning] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.1
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
