@@ -28,6 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [stakeholder-needs-and-requirements-definition] Added the process skill after 12207:2017 6.4.2
 - [requirements-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.3
 - [architecture-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.4
+- [design-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.5
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
