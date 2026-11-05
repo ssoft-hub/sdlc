@@ -21,6 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [decision-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.3
 - [risk-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.4
 - [configuration-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.5
+- [information-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.6
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
