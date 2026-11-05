@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [project-planning] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.1
 - [project-assessment-and-control] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.2
 - [decision-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.3
+- [risk-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.4
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
