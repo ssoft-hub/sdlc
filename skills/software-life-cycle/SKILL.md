@@ -26,8 +26,8 @@ The default model:
 
 | Stage | Purpose | Processes it draws on | Outputs |
 |---|---|---|---|
-| Concept | the need is understood, concepts are explored and a feasible one is chosen | business or mission analysis, stakeholder needs and requirements definition, requirements definition, system analysis, architecture definition | the need, the concepts explored, agreed requirements, the chosen concept |
-| Development | the software is specified, designed, built and shown to meet its requirements | requirements definition, architecture definition, design definition, system analysis, implementation, integration, verification, validation | the architecture and the design, the software built and integrated, verification and validation results |
+| Concept | the need is understood, concepts are explored and a feasible one is chosen | business or mission analysis, stakeholder needs and requirements definition, system/software requirements definition, system analysis, architecture definition | the need, the concepts explored, agreed requirements, the chosen concept |
+| Development | the software is specified, designed, built and shown to meet its requirements | system/software requirements definition, architecture definition, design definition, system analysis, implementation, integration, verification, validation | the architecture and the design, the software built and integrated, verification and validation results |
 | Production | the release is built, packaged and made ready for delivery | implementation, integration, verification, transition | the release |
 | Utilization | the software is put into use and operated | transition, operation, validation | the software in operation, records of its operation and of the problems met |
 | Support | the software is kept able to serve while in use | maintenance, operation | problem reports and modification requests analysed, modification options, the decisions on them |
