@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [measurement] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.7
 - [quality-assurance] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.8
 - [business-or-mission-analysis] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.1
+- [stakeholder-needs-and-requirements-definition] Added the process skill after 12207:2017 6.4.2
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
