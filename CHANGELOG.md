@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - [acquisition] Added `acquisition`: obtaining a product or service from a supplier
+- [supply] Added the process skill after ISO/IEC/IEEE 12207:2017 6.1.2
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
