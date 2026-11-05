@@ -37,6 +37,13 @@ installed from `main`, which carries released versions only.
 Every skill is a directory of `skills/` holding its `SKILL.md`. The directory goes where the
 agent reads skills from, as the agent's own documentation states.
 
+## Working with a project
+
+The agent follows the life cycle model the project describes: its stages, the decisions
+that open and close them, and where their outputs and records are kept. In a project that
+describes none, the agent proposes the default life cycle model of the catalog before the first
+work and asks; the life cycle model accepted is recorded as a decision and followed from then on.
+
 ## See also
 
 - [CHANGELOG](CHANGELOG.md)

@@ -1,0 +1,10 @@
+# The disposal process
+
+| Name | Statement | Observable as |
+|---|---|---|
+| purpose | the existence of the system or of a system element for its intended use is ended, the replaced or retired elements handled appropriately and with due attention to the critical needs - the agreement, the organization's policy, environmental and legal norms, the requirements of safety and security; the process ends operation and active support, deactivates, dismantles and removes the system or the element, destroys or stores it and the waste products under the legislation, the agreements, the organizational constraints and the stakeholder requirements, keeps expired, single-use or inadequate elements from returning to the supply, returns the environment to its original or an acceptable state and, where required, keeps records supporting the health of the operators and the users and the safety of the environment, preserving the integrity of the organization's operations | - |
+| constraints provided | the disposal constraints are provided as inputs to the requirements, the architecture, the design and the implementation | the constraints recorded and passed to the system/software requirements definition, architecture definition, design definition and implementation processes |
+| enabling systems available | any enabling systems or services disposal needs are available | access obtained to each enabling system or service planned |
+| elements disposed | the system elements and the waste products are destroyed, stored, reclaimed or recycled in accordance with the requirements of safety and security | the disposal strategy recorded, and each element and waste product deleted, archived, stored or passed on as it sets |
+| environment restored | the environment is returned to its original or an agreed state | the confirmations that no harmful factor remains and that the environment is in the original or the agreed state |
+| reports available | reports of the disposal actions and analysis are available | the records of the retirement actions, the archived information and the results of the analysis of long-term impacts accessible |

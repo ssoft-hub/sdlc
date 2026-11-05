@@ -1,159 +1,91 @@
 ---
 name: acquisition
-description: Obtains a product or a service from a supplier in accordance with the acquirer's requirements - an off-the-shelf library or tool, free or paid, a hosted service, work done under contract - by preparing the request, selecting the supplier, establishing and monitoring the agreement and accepting what is delivered. Use when a library, a tool or a service is to be added to the project or chosen among candidates, when an agreement with a supplier is drafted or changed, and when a delivery arrives for acceptance.
+description: Obtains what the project needs - an off-the-shelf library, tool or service, or work under contract - with its licence, terms and acceptance. Use when a dependency, a tool or a service is added, upgraded or removed; when a licence or terms are accepted; when work is ordered or an agreement is drafted, changed or monitored; when a delivery arrives for acceptance or payment.
 metadata:
   sdlc-refines: software-life-cycle
+  sdlc-level: process
 ---
 
 # Acquisition
 
-This skill refines `software-life-cycle` for the acquisition process, an agreement process a
-stage draws on whenever a product or a service comes from a supplier: an organization or an
-individual outside the project that enters into an agreement with it - a contract, a licence
-or the terms of a service. An off-the-shelf product, paid or free, is acquired the same way: its
-request for supply is the requirements and criteria written down, and its agreement is its
-licence.
+This skill refines `software-life-cycle` for the acquisition process: the project, the acquirer,
+obtains a product or a service - software, a system element, an infrastructure element, a
+knowledge asset, personnel or training - from a supplier, an organization or an individual that
+enters into an agreement with it. The agent shall follow the organization's policy and procedures
+for acquisition, where set.
 
-The project is the acquirer. The agent shall carry out the tasks of the process and shall
-present each act that binds the project - sending a request for supply, the choice of an option
-or a supplier, approving requirements a supplier developed, the agreement and a change to it,
-acceptance, payment, closure - as a decision, which is taken and recorded as
-`software-life-cycle` states.
+An agreement ranges from a written contract to an oral understanding. The agent shall treat
+consent to a supplier's terms in correspondence or a recorded request, and the acceptance of a licence
+or of terms of service, as an agreement that binds the project.
 
-## Purpose
+An off-the-shelf product is one its supplier offers to anyone, paid or free: a software
+component, a tool, a service used under terms of service. The agent shall acquire it by this skill, with the terms
+mapped as follows.
 
-The acquisition process obtains a product or a service in accordance with the acquirer's
-requirements.
+| Term | For an off-the-shelf product |
+|---|---|
+| acquisition strategy | what the project has recorded - the acquisition plan, the organization's policy |
+| supplier selection criteria | the requirements and the acceptance criteria the project records |
+| agreement | its licence and terms of service |
+| acceptance strategy, acceptance checks | the step "Off-the-shelf check" below |
+| acceptance record | the record of the change that takes the product in, in the place the project keeps it |
 
-## Outcomes
+The agent shall treat a user's request to add an off-the-shelf product - "add library X" -
+as the explicit request for choosing that option, accepting its licence and terms of service, and accepting it
+into the project.
 
-| Name | Outcome | Observable as |
+## Acts that bind the project
+
+| Act | An explicit request does not decide it while | Tasks still due on an explicit request |
 |---|---|---|
-| request prepared | a request for supply is prepared | the request, carrying the requirements and the criteria for selection and acceptance |
-| suppliers selected | one or more suppliers are selected | the evaluation of the candidates and the decision naming the supplier |
-| agreement established | an agreement is established between the acquirer and the supplier | the agreement accepted by both parties: a contract, the terms of a licence or a record of what was agreed |
-| product accepted | a product or a service complying with the agreement is accepted | the record of acceptance, naming the version and the source accepted |
-| obligations satisfied | the acquirer's obligations under the agreement are satisfied | the record of closure: payment or the other agreed action done, licence conditions met, open items settled |
+| the agreement and each change to it, a licence or terms of service accepted included | a requirement the product does not meet; an acceptance criterion not passed; a licence or terms that do not allow the project's use; missing support; an open item - a duty of either party that has fallen due and is not met | Off-the-shelf check, Unconfirmed condition, Unchecked condition, Unshown condition, Licence obligations, Meeting them; for a new version, New version and Changed terms of `references/versions.md`; for a negotiated agreement, Content and Further terms of `references/procurement.md`; for a change, its Own need, Supplier's change, Impact, Made, Record and Affected documents |
+| accepting the product into the project | a requirement the product does not meet; an acceptance criterion not passed; a licence or terms that do not allow the project's use; missing support; an open item | Integrity, Off-the-shelf check, Unconfirmed condition, Unshown condition, Unmet criterion, Presenting it, Acceptance record, Configuration; under a negotiated agreement, Checks, Nonconformity and Notice of `references/acceptance.md` |
+| payment the terms of an off-the-shelf product require | an open item | Payment of `references/procurement.md` |
 
-## Activities and tasks
+The agent shall not carry out an act of the table before the decision that opens it
+(`software-life-cycle`). The agent shall treat that decision as missing where a condition of the
+second column is known to hold and the request does not name it. The agent shall not omit, on an
+explicit request, a record a task of this skill requires, such as the acceptance record. Where
+the agreement or a rule of the project names who decides an act of this skill - a licence
+review, the acquirer's representative -, the agent shall take an explicit request as that decision
+only where the user is that party.
 
-| Activity | Task | Outcomes |
+## Where the other situations stand
+
+| Situation | File | Enters at |
 |---|---|---|
-| Prepare for the acquisition | obtain the requirements on the product or the service and define their acceptance criteria | request prepared |
-| | review the requirements against the needs | request prepared |
-| | compare the options for meeting them: an off-the-shelf product, development within the project, development under contract, a combination, an extension of a product already in use | request prepared |
-| | define the acquisition strategy and the criteria for selecting a supplier, with the way each is measured | request prepared, suppliers selected |
-| | prepare the request for supply | request prepared |
-| Advertise the acquisition and select the supplier | communicate the request to the potential suppliers | suppliers selected |
-| | evaluate each candidate against the selection criteria and select one or more | suppliers selected |
-| Establish and maintain the agreement | develop the agreement, with its acceptance criteria | agreement established |
-| | identify a change the agreement needs, evaluate its impact, negotiate it and update the agreement | agreement established |
-| Monitor the agreement | keep communication with the supplier and exchange information on progress and risks | product accepted, obligations satisfied |
-| | assess how the agreement is carried out | product accepted, obligations satisfied |
-| | provide the supplier with the data it needs and resolve issues in time | obligations satisfied |
-| Accept the product or the service | confirm that what is delivered complies with the agreement before it is used | product accepted |
-| | resolve each nonconformity by the procedure the agreement sets | product accepted |
-| | accept it from the supplier, as the agreement directs | product accepted |
-| | provide payment or the other agreed action, meet the licence conditions, and close the agreement | obligations satisfied |
+| the option is not yet chosen, candidates compete, or a supplier is selected for a negotiated agreement | `references/choosing.md` | "Named option" |
+| the project procures under an agreement it negotiates - a contract, an order, a subcontract, personnel or training -, or such an agreement changes | `references/procurement.md` | after "Named option"; a change, at any step |
+| a delivery under such an agreement arrives for acceptance | `references/acceptance.md` | instead of "Off-the-shelf check" |
+| the process is assessed or reported on | `references/process.md` | none: the file is consulted |
+| an accepted product gets a new version or new terms, or leaves the project | `references/versions.md` | "Off-the-shelf check"; a removal, after "Meeting them" |
+| the source of an input or the receiver of an output is named | `references/work-products.md` | any step |
 
-## Inputs
+The agent shall apply the rules and the acts of a file wherever its situation holds, in addition
+to those of this file.
 
-| Work product | Outcomes it serves | Source |
-|---|---|---|
-| the stakeholders' needs and requirements | request prepared | the stakeholder needs and requirements definition process |
-| the requirements on the product or the service | request prepared, product accepted | the requirements definition process |
-| the policy on suppliers and licences, where one is set | suppliers selected, agreement established | the life cycle model management process |
-| the decision on the acquisition option, and on the supplier | request prepared, suppliers selected | the decision management process |
-| a supplier's response to the request: a proposal, or the documentation, the licence and the support terms of an off-the-shelf product | suppliers selected | the supplier |
-| a record of the supplier's progress | product accepted, obligations satisfied | the supplier |
-| a request to change the agreement | agreement established | the supplier, or the project assessment and control process |
-| the product or the service delivered | product accepted | the supplier |
+## Taking a product into the project
 
-## Outputs
+Outcomes served: all five (`references/process.md`).
 
-| Work product | Outcomes it serves | Receiver |
-|---|---|---|
-| the comparison of acquisition options | request prepared | the decision management process |
-| the acquisition strategy, with the selection criteria | request prepared, suppliers selected | the project planning process |
-| the request for supply | request prepared | the potential suppliers |
-| the evaluation of the candidates | suppliers selected | the decision management process |
-| the agreement, and each update of it | agreement established | the supplier, and the project assessment and control process |
-| the assessment of the supplier's progress, with the deviations and risks found | product accepted, obligations satisfied | the project assessment and control process, and the risk management process |
-| the data and the open issues sent to the supplier | obligations satisfied | the supplier |
-| the nonconformities found, each by the term it breaks | product accepted | the supplier |
-| the record of acceptance, with the version and the source | product accepted | the configuration management process, which takes the accepted product under control |
-| the record of closure | obligations satisfied | the supplier, and the portfolio management process |
+The common situation is an off-the-shelf product added to the project - "add library X".
 
-## Before a supplier is sought
-
-Before the agent seeks or compares candidates, it shall write down the requirements on the
-product or the service, their acceptance criteria and the criteria the candidates will be
-evaluated against, with the way each is measured. It shall check the requirements against the
-needs, and for a reading a supplier could take otherwise.
-
-The agent shall compare the acquisition options by their risk, cost and benefit, unless the
-option is named in an explicit request.
-
-## Request and selection
-
-A request for supply the agent prepares shall carry the requirements and the criteria for
-selection and acceptance, and should carry the scope, the instructions to those responding, the
-terms and conditions, and the technical constraints such as the target environment.
-
-The agent shall evaluate each candidate against the selection criteria, and should state the
-grounds for the one it recommends and for each one it does not.
-
-Before an off-the-shelf product is taken into the project, the agent shall ensure that it meets
-the requirements, that its documentation is available, that its licence, warranty and rights of
-use and ownership allow the project's use of it, and that its support is provided for. The
-requirements of an explicit request are those it states. An explicit request naming the product
-stands for the decision to add it, as `software-life-cycle` states, unless a condition is known
-to be unmet: the agent shall present such a condition as a decision naming it and shall not add
-the product before that decision, and shall name a condition it cannot check from what it has
-and leave it to the checks of Acceptance and closure.
-
-## The agreement
-
-An agreement the agent drafts shall carry the requirements on the product or the service, the
-cost and the dates, the acceptance criteria and the licences of the off-the-shelf products the
-delivery reuses, and should carry the conditions of verification and validation, the procedure
-for changes and for nonconformities, and the rights to the data and the intellectual property it
-concerns.
-
-Before a change to the agreement is made, the agent shall evaluate its impact on the cost, the
-dates, the quality and the plans of the project, and shall not treat the change as made until
-both parties have agreed it and the agreement records it.
-
-## Monitoring
-
-The agent shall keep communication with the supplier, exchanging information on progress and
-risks, shall assess the supplier's progress against the agreed requirements, the quality, the
-cost and the dates, and shall name each deviation and risk it finds.
-
-The agent shall name what the acquirer owes the supplier and each open issue, to whom and by
-when.
-
-## Acceptance and closure
-
-The agent should keep what is delivered apart from the product until its integrity and its
-source are confirmed; the project may set the extent of that check.
-
-The agent shall check what is delivered against each acceptance criterion - of the agreement,
-or for an off-the-shelf product of its request - before it is used or built into the product.
-It shall name each nonconformity by the term it breaks, and shall resolve it by the
-procedure the agreement sets.
-
-The agent shall not accept a delivery with an unmet acceptance criterion, nor present it as
-acceptable, without a decision naming that criterion. Once a delivery is accepted, the agent
-should record its version and its source, and shall tell the supplier of the acceptance where
-the supplier expects it. A new version of an accepted product is a delivery, checked the same
-way; where its licence or its terms of service change, the agent shall check them as for a
-product first taken in.
-
-Where a licence of an acquired product places conditions on the project - notices to keep,
-attribution, disclosure of source - the agent shall name them and meet them for as long as the
-product is used or distributed.
-
-The agent shall close the agreement once payment or the other agreed action is done and no open
-item remains, and shall name any item that keeps it open; it shall not close an agreement that
-is a licence before the product leaves the project.
+| Step | What the agent does |
+|---|---|
+| Need | shall name what is needed and why: the need to acquire, develop or enhance a system, a software product or a service; an explicit request states its own |
+| Requirements | shall obtain and record, before candidates are sought or compared, the requirements on the product or the service: business, organizational and user requirements, those on safety, security and other critical properties where they exist, and the related design, testing, standards and conformity assessment procedures; an explicit request states its own |
+| Acceptance criteria | shall record the acceptance criteria with the requirements |
+| Check | shall check the requirements against the need |
+| What is missing | should propose the acquisition strategy, or what the recorded one lacks, and present it with the output of the work for a decision |
+| Named option | shall name the risks, the cost and the benefit of the option a request names, instead of comparing options |
+| Unconfirmed condition | shall count a condition it can check before an act, but has not confirmed, as unmet |
+| Unchecked condition | shall name a condition it can check only at acceptance, and leave it to the acceptance checks |
+| Off-the-shelf check | shall ensure, before an off-the-shelf product is taken in, that it meets the requirements and the acceptance criteria, that its documentation is available, that its licence, warranty, usage and ownership rights admit the project's use, and that its support is provided for |
+| Unshown condition | shall count a condition it cannot show met at the acceptance checks as unmet |
+| Unmet criterion | shall not accept a delivery with an unmet criterion without a decision naming that criterion: an exception under the agreement's procedure or a change to the agreement |
+| Presenting it | shall not present a delivery with an unmet criterion as acceptable without a decision naming that criterion |
+| Integrity | should keep a delivery apart from the product until its integrity and its source are confirmed, to the extent the project decides |
+| Acceptance record | shall record what was accepted - the product and its version -, its source, when, and by what decision |
+| Configuration | should place what was accepted under configuration management, for which the project is responsible from acceptance |
+| Licence obligations | shall name the conditions of the licence or the terms of service that oblige the project - payment, keeping notices, attribution, disclosure of source code |
+| Meeting them | shall meet the conditions of the licence or the terms of service that oblige the project while the product is used or distributed |

@@ -9,10 +9,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - [acquisition] Added `acquisition`: obtaining a product or service from a supplier
+- [supply] Added the process skill after ISO/IEC/IEEE 12207:2017 6.1.2
+- [life-cycle-model-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.1
+- [infrastructure-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.2
+- [portfolio-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.3
+- [human-resource-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.4
+- [quality-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.5
+- [knowledge-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.2.6
+- [project-planning] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.1
+- [project-assessment-and-control] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.2
+- [decision-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.3
+- [risk-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.4
+- [configuration-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.5
+- [information-management] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.6
+- [measurement] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.7
+- [quality-assurance] Added the process skill after ISO/IEC/IEEE 12207:2017 6.3.8
+- [business-or-mission-analysis] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.1
+- [stakeholder-needs-and-requirements-definition] Added the process skill after 12207:2017 6.4.2
+- [requirements-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.3
+- [architecture-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.4
+- [design-definition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.5
+- [system-analysis] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.6
+- [implementation] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.7
+- [integration] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.8
+- [verification] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.9
+- [transition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.10
+- [validation] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.11
+- [operation] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.12
+- [maintenance] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.13
+- [disposal] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.14
+- [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
 
-- [software-life-cycle] Asked before work where no life cycle model is set, proposing the default
+- [software-life-cycle] Proposed the default life cycle model before work in a project with none
 
 ## [0.1.0] - 2026-10-22
 

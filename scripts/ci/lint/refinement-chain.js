@@ -2,6 +2,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const LEVELS = ['life-cycle', 'process', 'practice', 'language-or-tool'];
+
 function readCatalog(skillsDir) {
   return fs
     .readdirSync(skillsDir, { withFileTypes: true })
@@ -12,7 +14,8 @@ function readCatalog(skillsDir) {
       const text = fs.readFileSync(path.join(skillsDir, name, 'SKILL.md'), 'utf8');
       const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(text)?.[1] ?? '';
       const refines = /^[ \t]+sdlc-refines:[ \t]*(\S+)/m.exec(frontmatter);
-      return { name, refines: refines ? refines[1] : null, text };
+      const level = /^[ \t]+sdlc-level:[ \t]*(\S+)/m.exec(frontmatter);
+      return { name, refines: refines ? refines[1] : null, level: level ? level[1] : null, text };
     });
 }
 
@@ -28,6 +31,12 @@ function checkCatalog(skills) {
     if (cycle) {
       problems.push(`${skill.name}: the chain of sdlc-refines ${chain.join(' -> ')} reaches no root`);
       continue;
+    }
+    const expected = LEVELS[chain.length - 1] ?? 'no level of the catalog';
+    if (!skill.level) {
+      problems.push(`${skill.name}: carries no metadata key sdlc-level`);
+    } else if (skill.level !== expected) {
+      problems.push(`${skill.name}: sdlc-level is "${skill.level}", but its chain of sdlc-refines places it at "${expected}"`);
     }
     const referenced = referencedSkills(skill.text, byName);
     if (skill.refines && !referenced.has(skill.refines)) {

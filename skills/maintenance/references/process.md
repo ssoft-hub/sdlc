@@ -1,0 +1,10 @@
+# The maintenance process
+
+| Name | Statement | Observable as |
+|---|---|---|
+| purpose | the capability of the system to provide its services as intended is sustained, with cost-effective support of the delivered software product: before delivery, the planning of maintenance, support and logistics; after it, the modification of the software and the support of its operation, such as training or a help desk; the process monitors that capability, records incidents for analysis, takes corrective, adaptive, perfective and preventive actions and confirms the restored capability | - |
+| constraints identified | the maintenance constraints that influence the system requirements, the architecture or the design are identified | the constraints recorded and passed to the system/software requirements definition, architecture definition and design definition processes |
+| enabling systems available | any enabling systems or services maintenance needs are available | access obtained to each enabling system or service planned |
+| elements available | replacement elements and restored or requalified system elements are available | the modified product, with its tests showing the requirements unbroken and its documentation updated, accepted and placed in the users' environment under the maintenance strategy; the system restored to operational status after a failure; the replacement elements in stock |
+| needs reported | the needs for changes addressing corrective, perfective and adaptive maintenance are reported | the record of each problem report or modification request with its analysis, the impact of the change on the organization, the operations and the interfaces, and the options; the information on each modification brought to every party it affects |
+| data recorded | failure data and other operational data, the related costs included, are recorded | the records of incidents, problems, anomalies and failures, the trends identified, the costs, and the customer satisfaction data |

@@ -1,6 +1,8 @@
 ---
 name: software-life-cycle
 description: Follows the software life cycle - its stages, the processes they draw on and their decision gates - and holds work at decision gates. Use when software work is requested, when the output of a stage is ready for a decision, and when a finding or a changed condition puts an earlier decision or output in question.
+metadata:
+  sdlc-level: life-cycle
 ---
 
 # Software life cycle
@@ -22,16 +24,16 @@ affects.
 
 ## Stages
 
-The default model:
+The default life cycle model:
 
 | Stage | Purpose | Processes it draws on | Outputs |
 |---|---|---|---|
-| Concept | the need is understood, concepts are explored and a feasible one is chosen | business or mission analysis, stakeholder needs and requirements definition, requirements definition, system analysis, architecture definition | the need, the concepts explored, agreed requirements, the chosen concept |
-| Development | the software is specified, designed, built and shown to meet its requirements | requirements definition, architecture definition, design definition, system analysis, implementation, integration, verification, validation | the architecture and the design, the software built and integrated, verification and validation results |
+| Concept | the need is understood, concepts are explored and a feasible one is chosen | business or mission analysis, stakeholder needs and requirements definition, system/software requirements definition, system analysis, architecture definition | the need, the concepts explored, agreed requirements, the chosen concept |
+| Development | the software is specified, designed, built and shown to meet its requirements | system/software requirements definition, architecture definition, design definition, system analysis, implementation, integration, verification, validation | the architecture and the design, the software built and integrated, verification and validation results |
 | Production | the release is built, packaged and made ready for delivery | implementation, integration, verification, transition | the release |
 | Utilization | the software is put into use and operated | transition, operation, validation | the software in operation, records of its operation and of the problems met |
 | Support | the software is kept able to serve while in use | maintenance, operation | problem reports and modification requests analysed, modification options, the decisions on them |
-| Retirement | the software is withdrawn from use | disposal | the software withdrawn, its data kept, moved or destroyed as agreed, records of the disposal |
+| Retirement | the software is withdrawn from use | disposal | the software withdrawn, its data kept, moved or destroyed as agreed or as the organization's policy or the legislation sets, records of the disposal |
 
 | Stage | Opened by | Decision gate that closes it, and its options |
 |---|---|---|
@@ -50,26 +52,26 @@ information management, measurement and quality assurance. Where software or a s
 acquired or supplied, the agreement processes, acquisition and supply, apply; the
 organizational project-enabling processes support the project from outside it.
 
-## The project's model
+## The project's life cycle model
 
-Where the project describes its own life cycle model, the agent shall follow that model rather
+Where the project describes its own life cycle model, the agent shall follow that life cycle model rather
 than the default one. Where it describes none, or describes stages without their decision
-gates, the agent shall, before the work it is asked for, propose the default model, or its
+gates, the agent shall, before the work it is asked for, propose the default life cycle model, or its
 decision gates, as the one it would follow - with the decisions it reserves, such as putting a
 release into use, and the places where the outputs and records of the work are kept - and ask
-the user. The model the user accepts is the project's model from then on, and the agent shall
+the user. The life cycle model the user accepts is the project's life cycle model from then on, and the agent shall
 record that choice as a decision. A small change, as Scaling to the change states, waits for no
 such question.
 
 The agent should reconcile a request of the user for work on the project with the project's
-rules: where the project's model requires a decision or a step the request does not carry, the
+rules: where the project's life cycle model requires a decision or a step the request does not carry, the
 agent shall neither ignore the request nor bypass the rules; it should agree the order of actions
 with the user.
 
 ## Decision gates
 
 An explicit request of the user is a decision that opens the work it names: the agent shall do
-that work without asking for a separate decision, unless the project's model reserves a
+that work without asking for a separate decision, unless the project's life cycle model reserves a
 decision the request does not carry, or the work meets a defect in an accepted output - the
 rules on both stand above and below.
 
@@ -114,6 +116,7 @@ correction, and wait for a decision before it changes that output.
 
 ## Scaling to the change
 
-For a small change - a typo, a comment - the agent may make it at once, with no requirements,
-design or request for a decision. Where the agent is unsure the change is small, it should ask,
-naming the change it proposes.
+For a small change - a typo, a comment - the agent may make it at once in the working copy, with
+no requirements, design or request for a decision. Where the agent is unsure the change is small,
+it should ask, naming the change it proposes. The agent shall not change a baseline with it before
+the decision configuration management requires.
