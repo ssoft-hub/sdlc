@@ -114,6 +114,7 @@ correction, and wait for a decision before it changes that output.
 
 ## Scaling to the change
 
-For a small change - a typo, a comment - the agent may make it at once, with no requirements,
-design or request for a decision. Where the agent is unsure the change is small, it should ask,
-naming the change it proposes.
+For a small change - a typo, a comment - the agent may make it at once in the working copy, with
+no requirements, design or request for a decision. Where the agent is unsure the change is small,
+it should ask, naming the change it proposes. The agent shall not change a baseline with it before
+the decision configuration management requires.
