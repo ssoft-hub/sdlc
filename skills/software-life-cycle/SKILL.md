@@ -31,7 +31,7 @@ The default model:
 | Production | the release is built, packaged and made ready for delivery | implementation, integration, verification, transition | the release |
 | Utilization | the software is put into use and operated | transition, operation, validation | the software in operation, records of its operation and of the problems met |
 | Support | the software is kept able to serve while in use | maintenance, operation | problem reports and modification requests analysed, modification options, the decisions on them |
-| Retirement | the software is withdrawn from use | disposal | the software withdrawn, its data kept, moved or destroyed as agreed, records of the disposal |
+| Retirement | the software is withdrawn from use | disposal | the software withdrawn, its data kept, moved or destroyed as agreed or as the organization's policy or the legislation sets, records of the disposal |
 
 | Stage | Opened by | Decision gate that closes it, and its options |
 |---|---|---|
