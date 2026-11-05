@@ -35,6 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - [verification] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.9
 - [transition] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.10
 - [validation] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.11
+- [operation] Added the process skill after ISO/IEC/IEEE 12207:2017 6.4.12
 - [catalog] Added the metadata key `sdlc-level`, naming the level a skill stands at
 
 ### Changed
