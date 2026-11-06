@@ -43,6 +43,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - [software-life-cycle] Proposed the default life cycle model before work in a project with none
+- [plugin] Moved installation to `claude plugin marketplace add ssoft-ai/marketplace`
+- [licence] Relicensed under MIT, which requires keeping the author's copyright notice
 
 ## [0.1.0] - 2026-10-22
 
