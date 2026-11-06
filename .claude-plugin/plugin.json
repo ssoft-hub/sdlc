@@ -3,7 +3,7 @@
   "description": "Software development life cycle skills after the industry standards, from the life cycle as a whole down to languages and tools",
   "version": "0.1.0",
   "author": { "name": "ssoft-hub" },
-  "homepage": "https://github.com/ssoft-hub/sdlc",
-  "repository": "https://github.com/ssoft-hub/sdlc",
+  "homepage": "https://github.com/ssoft-ai/sdlc",
+  "repository": "https://github.com/ssoft-ai/sdlc",
   "license": "Unlicense"
 }

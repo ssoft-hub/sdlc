@@ -3,7 +3,7 @@
 ## Taking part
 
 A person should report a defect or suggest an enhancement in an
-[issue of the project](https://github.com/ssoft-hub/sdlc/issues): a defect in an issue of type
+[issue of the project](https://github.com/ssoft-ai/sdlc/issues): a defect in an issue of type
 `Fix`, an enhancement in an issue of the type the table of the Issues section gives it. A pull
 request should implement an enhancement only once the maintainers have agreed to it in the
 issue.
@@ -68,7 +68,7 @@ others. Each part of the repository is read by every such agent or by one alone:
 |---|---|---|
 | `skills/` | every agent reading the Agent Skills format | the skills of the catalog |
 | `AGENTS.md` | every agent reading that file | the instructions for an agent working in this repository |
-| `.claude-plugin/` | Claude Code | the plugin manifest and the marketplace catalog |
+| `.claude-plugin/` | Claude Code | the plugin manifest |
 | `evals/` | an evaluation tool, such as `claude plugin eval` of Claude Code | the eval cases of the skills |
 
 | Subject | Force | Rule |
@@ -92,12 +92,12 @@ others. Each part of the repository is read by every such agent or by one alone:
 
 | Step | Force | Rule |
 |---|---|---|
-| Clone | shall | a member clones the project: `git clone https://github.com/ssoft-hub/sdlc.git`; a person who is not a member forks it on GitHub, clones the fork and adds the project as the remote `upstream`: `git remote add upstream https://github.com/ssoft-hub/sdlc.git` |
+| Clone | shall | a member clones the project: `git clone https://github.com/ssoft-ai/sdlc.git`; a person who is not a member forks it on GitHub, clones the fork and adds the project as the remote `upstream`: `git remote add upstream https://github.com/ssoft-ai/sdlc.git` |
 | Branch | shall | from the current branch `dev` of the project: `git fetch origin` and `git switch -c <branch> --no-track origin/dev` in a clone of the project, `git fetch upstream` and `git switch -c <branch> --no-track upstream/dev` in a clone of a fork |
 | Check | shall | the checks of the Checks section pass |
 | Commits | shall | as the Commits and branches section states |
 | Push | shall | `git push -u origin HEAD` |
-| Pull request | shall | into `dev` of [ssoft-hub/sdlc](https://github.com/ssoft-hub/sdlc), also from a fork |
+| Pull request | shall | into `dev` of [ssoft-ai/sdlc](https://github.com/ssoft-ai/sdlc), also from a fork |
 
 ### Pull requests from a fork
 
