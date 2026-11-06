@@ -8,7 +8,7 @@ catalog is ordered from the general to the specific: the software life cycle, it
 after ISO/IEC/IEEE 12207, the practices that carry out a process, and what a language or a
 tool adds to a practice.
 Every skill follows the open [Agent Skills](https://agentskills.io) format; for Claude Code
-the catalog ships as a plugin. Licensed under [The Unlicense](LICENSE.md).
+the catalog ships as a plugin. Licensed under the [MIT licence](LICENSE.md).
 
 ## Requirements
 
